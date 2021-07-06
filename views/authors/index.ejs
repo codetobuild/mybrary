@@ -1,1 +1,18 @@
-<h1>Wow! this is a room for all authors</h1>
+<h1>Search Authors</h1>
+
+<form action="/authors" method="GET">
+
+<label for="name">Name</label>
+<input type="text" name="name" value="<%= searchOptions %> ">
+
+<button type="submit">Search</button>
+
+</form>
+
+<br>
+
+<% authors.forEach(author => { %>
+  
+    <div><%= author.name %> </div>
+
+<% }) %>

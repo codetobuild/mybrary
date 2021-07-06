@@ -23,7 +23,8 @@ app.set('views', 'views')
 app.set('layout', 'layouts/layout')
 app.use(expressLayouts)
 app.use(express.static('public'))
-
+app.use(express.json());
+app.use(express.urlencoded({extended:true, limit:'10mb'}));
 
 
 
