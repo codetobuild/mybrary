@@ -15,7 +15,8 @@ db.once('open', function() {
 });
 
 //routes
-const indexRouter = require('./routes/index')
+const indexRoute = require('./routes/index')
+const authorsRoute = require('./routes/authors')
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
@@ -26,7 +27,8 @@ app.use(express.static('public'))
 
 
 
-app.use('/', indexRouter);
+app.use('/', indexRoute);
+app.use('/authors', authorsRoute);
 
 
 
