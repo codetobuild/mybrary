@@ -1,2 +1,2 @@
 # mybrary application
-## This is a book review application which is still under developement.
+## This is a book review application.
